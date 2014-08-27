@@ -1,4 +1,4 @@
-phonegap, cordova  facebook base de datos mysql jquery moblie
+phonegap, cordova  facebook base de datos mysql jquery moblie facebook login phonegap iniciar sesion facebook en cordova 
 ===============
 
 phonegap, cordova  facebook base de datos mysql jquery moblie
