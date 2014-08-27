@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.phonegap.example"
+	version   = "1.0.0">
+	<name>Elecciones municipales 2014</name>
+	<description>
+		No sabes donde te toca votar, numero de mesa o si eres miembro de mesa entonces llegaste a la aplicación correcta.
+	</description>
+	<icon src="img/onpe-logo.png" />
+	<author href="http://www.webdesignjc.com" email="llavillaccama@gmail.com">
+		Julio Cesar Llavilla Ccama
+	</author>
+	<content src="index.html" />
+	<access origin="*" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
+	<gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
+	<gap:plugin name="info.asankan.phonegap.smsplugin" version="0.1.0" />
+	
+	<gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.4.0">
+		<param name="APP_ID" value="255107251366338" />
+		<param name="APP_NAME" value="Elecciones Municipales 2014" />
+	</gap:plugin>
+
+
+	
+</widget>

@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+#map-canvas{
+			height:100%;
+			width:100%;
+			padding:0;
+			position:absolute !important;
+			top:40px;
+			righ:0px;
+			bottom:0px !important;
+			left:0px !important;
+			}
+.miBoton {
+		display: block;
+		width: 100px;
+		height: 100px;
+		background: url(BOTON/boton.png) bottom;
+		text-indent: -99999px;
+		
+}
+.miBoton:hover {
+	background-position: 0 0;
+}
+.posicionBoton{		margin:auto;		bottom:35px;		left:0px;		position:absolute	}
+
+	
+				
+
+

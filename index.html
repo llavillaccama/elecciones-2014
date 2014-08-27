@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Elecciones municipales 2014 </title>
+  <meta HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="css/ratchet.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="themes/theme.min.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.3.min.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.3.min.js"></script>
+  <!--cordova.js is automatically injected by the Cordova build process-->
+  <script src="cordova.js"></script>
+  <script src="smsplugin.js"></script>
+
+  <script src="js/openfb.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/GoogleMaps.js"></script>
+   
+</head>
+<body>
+
+  <!--------  Page 1  -------->
+  <div data-role="page" id="home">
+    <a class="btn-fb" onclick="login()">
+      <img src="img/btnLoginFacebook.png">
+    </a>
+  
+    <a class="salir" onclick="navigator.app.exitApp()">
+      <img src="img/salir.png" alt="">
+    </a>
+  </div>
+  <div data-role="page" id="menu-home">
+    <div data-role="content">
+      <a href="views/voto.html" data-role="button"  data-rel="external" data-transition="slide" ><img src="img/onpe1.png" alt="">Donde Votar</a>
+      <a href="views/info.html" data-role="button"  data-rel="external"  data-transition="slide" onclick="getInfo()"><img src="img/profile.png" alt="">información </a>
+      <a href="views/ubicacion.html" data-role="button"  data-rel="external" data-transition="slide"><img src="img/ubicacion.png" alt="">ubicación </a>
+      <a onclick="navigator.app.exitApp()" data-role="button" data-icon="delete" data-iconpos="left" data-transition="slide">Salir de la APP</a>
+    </div>
+  </div>
+  <div data-role="page" id="page-alert">
+    <div data-role="content">
+      <div data-role="body">
+        <p>Gracias por registrarte, en esta aplicación encontraras información útil acerca de las elecciones municipales 2014 y posteriormente para las elecciones presidenciales.</p>
+      </div>
+    </div>
+  </div>
+  <!--------  Page 4  -------->
+  <div data-role="page" id="page4">
+    <div data-role="header">
+      <h1>P?gina dos</h1>
+    </div>
+    <div data-role="content"> 
+     <!-------- INICIA FORMULARIO ------>
+     <div >
+      <label for="Nombre">Nombre:</label>
+      <input type="text" name="Nombre" id="Nombre" value=""  />
+    </div>
+    <div >
+      <label for="textinput">Introducci?n de texto:</label>
+      <input type="text" name="textinput" id="textinput" value=""  />
+    </div>
+    <div >
+      <label for="Descripcion">Descripcion:</label>
+      <textarea cols="40" rows="8"  name="Descripcion" id="Descripcion" value=""  /></textarea>
+    </div>
+    <div >
+      <label for="LatY">Latitud:</label>
+      <input type="text" disabled="disabled" name="LatY" id="LatY" value=""  />
+    </div>
+    <div >
+      <label for="LongX">Longitud:</label>
+      <input type="text" disabled="disabled" name="LongX" id="LongX" value="" />
+    </div>
+    <button type="button" data-theme="a" id="guardardatos">Enviar</button>
+    <!--------FIN FORMULARIO------> 
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page2">Form</a></li>
+        <li><a href="#paginaMapa">Mapa</a></li>
+        <li><a href="#page5">Voto</a></li>
+        <li><a href="#page6">Resuld 2</a></li>
+        <li><a onclick="logout()">Salir</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--------  Page 6  -------->
+<div data-role="page" id="page6">
+  <div data-role="header">
+    <h1>Resultados</h1>
+  </div>
+  <div data-role="content" > 
+   <div id="resultusuario">
+   </div>
+ </div>
+ <div data-role="footer" data-position="fixed">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#page2">Form</a></li>
+      <li><a href="#paginaMapa">Mapa</a></li>
+      <li><a href="#page5">Voto</a></li>
+      <li><a href="#page6">Resuld 2</a></li>
+      <li><a onclick="logout()">Salir</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+  <!--------  informacion de contacto -------->
+  <div data-role="page" id="info">
+   <div data-role="header" class="">
+    <h1>Tu información </h1>
+  </div>
+  <div data-role="content">
+    <div data-role="body">
+
+     <div class="foto-user"> <p><img id="userPic"/></p></div>
+
+     <ul data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <li data-form="ui-bar-a" data-swatch="a" data-theme="a" data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a ui-first-child">Nombre:</li>
+        <li data-theme="a" data-swatch="a" data-form="ui-body-a" class="ui-li-static ui-body-a"> <p id="userName"></p></li>
+      </ul>
+      
+      
+ <ul data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <li data-form="ui-bar-a" data-swatch="a" data-theme="a" data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a ui-first-child">E-Mail:</li>
+        <li data-theme="a" data-swatch="a" data-form="ui-body-a" class="ui-li-static ui-body-a">  <p id="userEmail"></p></li>
+      </ul>
+
+      <ul data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <li data-form="ui-bar-a" data-swatch="a" data-theme="a" data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a ui-first-child">E-F. Nacimiento:</li>
+        <li data-theme="a" data-swatch="a" data-form="ui-body-a" class="ui-li-static ui-body-a">  <p id="userBirthday"></p></li>
+      </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="../index.html#menu-home" data-icon="home" data-transition="slide">Home</a></li>
+          <li><a data-icon="check" data-transition="slide" onclick="share()">Share</a></li>
+          <li><a data-icon="check" data-transition="slide" onclick="sendsms()">SMS Send</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
